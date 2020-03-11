@@ -7,9 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		696844D124180FC20000067C /* NetworkModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696844C724180FC20000067C /* NetworkModule.framework */; };
 		696844D624180FC20000067C /* NetworkModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844D524180FC20000067C /* NetworkModuleTests.swift */; };
 		696844D824180FC20000067C /* NetworkModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 696844CA24180FC20000067C /* NetworkModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		696844E4241810010000067C /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844E3241810010000067C /* NetworkConstants.swift */; };
+		696844E7241810360000067C /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844E6241810360000067C /* NetworkRouter.swift */; };
+		696844E9241810490000067C /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844E8241810490000067C /* RouterProtocol.swift */; };
+		696844EB241810640000067C /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844EA241810640000067C /* NetworkLogger.swift */; };
+		696844ED241810750000067C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844EC241810750000067C /* NetworkManager.swift */; };
+		696844EF2418108B0000067C /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844EE2418108B0000067C /* NetworkProtocol.swift */; };
+		696844F2241810CB0000067C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844F1241810CB0000067C /* Service.swift */; };
+		696844F5241810FB0000067C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844F4241810FB0000067C /* HTTPMethod.swift */; };
+		696844F72418110B0000067C /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844F62418110B0000067C /* HTTPTask.swift */; };
+		696844F92418112E0000067C /* HTTPAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844F82418112E0000067C /* HTTPAuth.swift */; };
+		696844FB2418113B0000067C /* RequestTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844FA2418113B0000067C /* RequestTimeInterval.swift */; };
+		696844FE2418115E0000067C /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844FD2418115E0000067C /* CustomError.swift */; };
+		69684500241811780000067C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696844FF241811780000067C /* NetworkError.swift */; };
+		69684502241811AB0000067C /* RequesterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69684501241811AB0000067C /* RequesterError.swift */; };
+		69684505241811E40000067C /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69684504241811E40000067C /* URLParameterEncoder.swift */; };
+		69684507241812080000067C /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69684506241812080000067C /* JSONParameterEncoder.swift */; };
+		69684509241812170000067C /* ParameterEncoderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69684508241812170000067C /* ParameterEncoderProtocol.swift */; };
+		6968454A24181DBE0000067C /* NetworkModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696844C724180FC20000067C /* NetworkModule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +46,23 @@
 		696844D024180FC20000067C /* NetworkModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		696844D524180FC20000067C /* NetworkModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModuleTests.swift; sourceTree = "<group>"; };
 		696844D724180FC20000067C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696844E3241810010000067C /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		696844E6241810360000067C /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		696844E8241810490000067C /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		696844EA241810640000067C /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		696844EC241810750000067C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		696844EE2418108B0000067C /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		696844F1241810CB0000067C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		696844F4241810FB0000067C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		696844F62418110B0000067C /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		696844F82418112E0000067C /* HTTPAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPAuth.swift; sourceTree = "<group>"; };
+		696844FA2418113B0000067C /* RequestTimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTimeInterval.swift; sourceTree = "<group>"; };
+		696844FD2418115E0000067C /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		696844FF241811780000067C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		69684501241811AB0000067C /* RequesterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequesterError.swift; sourceTree = "<group>"; };
+		69684504241811E40000067C /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		69684506241812080000067C /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		69684508241812170000067C /* ParameterEncoderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoderProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				696844D124180FC20000067C /* NetworkModule.framework in Frameworks */,
+				6968454A24181DBE0000067C /* NetworkModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +105,7 @@
 		696844C924180FC20000067C /* NetworkModule */ = {
 			isa = PBXGroup;
 			children = (
+				696844E124180FD90000067C /* Engine */,
 				696844CA24180FC20000067C /* NetworkModule.h */,
 				696844CB24180FC20000067C /* Info.plist */,
 			);
@@ -84,6 +119,78 @@
 				696844D724180FC20000067C /* Info.plist */,
 			);
 			path = NetworkModuleTests;
+			sourceTree = "<group>";
+		};
+		696844E124180FD90000067C /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				696844F0241810A60000067C /* Service */,
+				696844E5241810230000067C /* Network */,
+				696844E224180FEB0000067C /* Constants */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		696844E224180FEB0000067C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				696844E3241810010000067C /* NetworkConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		696844E5241810230000067C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				696844E6241810360000067C /* NetworkRouter.swift */,
+				696844E8241810490000067C /* RouterProtocol.swift */,
+				696844EA241810640000067C /* NetworkLogger.swift */,
+				696844EC241810750000067C /* NetworkManager.swift */,
+				696844EE2418108B0000067C /* NetworkProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		696844F0241810A60000067C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				69684503241811D80000067C /* Encoders */,
+				696844FC241811560000067C /* Error */,
+				696844F3241810F10000067C /* HTTP */,
+				696844F1241810CB0000067C /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		696844F3241810F10000067C /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				696844F4241810FB0000067C /* HTTPMethod.swift */,
+				696844F62418110B0000067C /* HTTPTask.swift */,
+				696844F82418112E0000067C /* HTTPAuth.swift */,
+				696844FA2418113B0000067C /* RequestTimeInterval.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		696844FC241811560000067C /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				696844FD2418115E0000067C /* CustomError.swift */,
+				696844FF241811780000067C /* NetworkError.swift */,
+				69684501241811AB0000067C /* RequesterError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		69684503241811D80000067C /* Encoders */ = {
+			isa = PBXGroup;
+			children = (
+				69684504241811E40000067C /* URLParameterEncoder.swift */,
+				69684506241812080000067C /* JSONParameterEncoder.swift */,
+				69684508241812170000067C /* ParameterEncoderProtocol.swift */,
+			);
+			path = Encoders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +255,7 @@
 				TargetAttributes = {
 					696844C624180FC20000067C = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					696844CF24180FC20000067C = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -195,6 +303,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69684507241812080000067C /* JSONParameterEncoder.swift in Sources */,
+				696844EB241810640000067C /* NetworkLogger.swift in Sources */,
+				696844F92418112E0000067C /* HTTPAuth.swift in Sources */,
+				696844F2241810CB0000067C /* Service.swift in Sources */,
+				696844E9241810490000067C /* RouterProtocol.swift in Sources */,
+				696844FB2418113B0000067C /* RequestTimeInterval.swift in Sources */,
+				696844FE2418115E0000067C /* CustomError.swift in Sources */,
+				696844F72418110B0000067C /* HTTPTask.swift in Sources */,
+				69684502241811AB0000067C /* RequesterError.swift in Sources */,
+				69684505241811E40000067C /* URLParameterEncoder.swift in Sources */,
+				696844EF2418108B0000067C /* NetworkProtocol.swift in Sources */,
+				696844F5241810FB0000067C /* HTTPMethod.swift in Sources */,
+				696844ED241810750000067C /* NetworkManager.swift in Sources */,
+				69684509241812170000067C /* ParameterEncoderProtocol.swift in Sources */,
+				69684500241811780000067C /* NetworkError.swift in Sources */,
+				696844E4241810010000067C /* NetworkConstants.swift in Sources */,
+				696844E7241810360000067C /* NetworkRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,11 +465,16 @@
 		696844DC24180FC20000067C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NetworkModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -355,6 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ios.NetworkModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,11 +494,16 @@
 		696844DD24180FC20000067C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NetworkModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -386,6 +522,7 @@
 		696844DF24180FC20000067C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkModuleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +540,7 @@
 		696844E024180FC20000067C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkModuleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
